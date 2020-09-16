@@ -1,0 +1,29 @@
+﻿@model Employee
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Create Employee</h1>
+</div>
+<div asp-validation-summary="All"></div>
+<form action="" method="POST">
+    <div>
+        <label asp-for="Firstname">Firstname: </label>
+        <input asp-for="Firstname" />
+    </div>
+    <div>
+        <label asp-for="Lastname">Lastname: </label>
+        <input asp-for="Lastname" />
+    </div>
+    <div>
+        <label asp-for="TypeOfDocument">Type of Document: </label>
+        <input asp-for="TypeOfDocument" />
+    </div>
+    <div>
+        <label asp-for="Document">Document: </label>
+        <input asp-for="Document" />
+    </div>
+    <input type="submit" value="Enviar">
+</form>
